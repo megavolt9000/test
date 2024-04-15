@@ -91,13 +91,7 @@ public class Converter_Test_2 implements TextGraphicsConverter {
         return sb.toString();
     }
 
-    /**
-     * Метод для масштабирования изображения и получения объекта класса WritableRaster
-     * для дальнейшего прогона по пикселям изображения
-     *
-     * @param img оригинал изображения
-     * @return возвращаем черно-белое изображение
-     */
+  
     private WritableRaster getWritableRaster(BufferedImage img) {
         if (img.getWidth() > width || img.getHeight() > height) {
             double tmpWidth;
