@@ -87,11 +87,12 @@ public class Converter_Test_2 implements TextGraphicsConverter {
                 sb.append(c);
             }
             sb.append("\n");
+
         }
         return sb.toString();
     }
 
-  
+
     private WritableRaster getWritableRaster(BufferedImage img) {
         if (img.getWidth() > width || img.getHeight() > height) {
             double tmpWidth;
